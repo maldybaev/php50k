@@ -39,14 +39,14 @@ Route::get('/products/create', [ ProductController::class, 'create' ]);
 Route::get('/products/edit', [ ProductController::class, 'edit' ]);
 Route::get('/products/delete', [ ProductController::class, 'delete' ]);
 
-use App\Http\Controllers\FAQController;
-Route::get('/FAQ', [ FAQController::class, 'index' ]);
-Route::get('/FAQ/create', [ FAQController::class, 'create' ]);
-Route::get('/FAQ/edit', [ FAQController::class, 'edit' ]);
-Route::get('/FAQ/delete', [ FAQController::class, 'delete' ]);
-
 use App\Http\Controllers\UserController;
 Route::get('/user', [ UserController::class, 'profile' ]);
 Route::get('/user/reg', [ UserController::class, 'reg' ]);
 Route::get('/user/edit', [ UserController::class, 'edit' ]);
 Route::get('/user/delete', [ UserController::class, 'delete' ]);
+
+use App\Http\Controllers\FAQController;
+Route::get('/faq', [ FAQController::class, 'index' ]);
+Route::get('/faq/create', [ FAQController::class, 'create' ]);
+Route::get('/faq/edit', [ FAQController::class, 'edit' ]);
+Route::get('/faq/delete', [ FAQController::class, 'delete' ]);
