@@ -1,5 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
+
+ @section('title', 'Часто задаваемые вопросы')
+
  @section('content')
+
  @foreach ($faqs as $faq)
     <div class="item">
       <h1><a href="">{{ $faq['title'] }}</a></h1>

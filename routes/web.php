@@ -26,7 +26,8 @@ Route::get('/aboutus', [ HomeController::class, 'aboutus' ]);
 
 use App\Http\Controllers\PostController;
 Route::group(['prefix' => '/posts'], function () {
-    Route::get('/', [ PostController::class, 'index' ]);
+    Route::get('/', [ PostController::class, 'index' ])->name('posts.index');
+    Route::get('/show/{post_id}', [ PostController::class, 'show' ])->name('posts.show');
     Route::get('/create', [ PostController::class, 'create' ]);
     Route::get('/edit', [ PostController::class, 'edit' ]);
     Route::get('/delete', [ PostController::class, 'delete' ]);
@@ -34,7 +35,8 @@ Route::group(['prefix' => '/posts'], function () {
 
 
 use App\Http\Controllers\ProductController;
-Route::get('/products', [ ProductController::class, 'index' ]);
+Route::get('/products', [ ProductController::class, 'index' ])->name('products.index');
+Route::get('/products/show/{product_id}', [ ProductController::class, 'show' ])->name('products.show');
 Route::get('/products/create', [ ProductController::class, 'create' ]);
 Route::get('/products/edit', [ ProductController::class, 'edit' ]);
 Route::get('/products/delete', [ ProductController::class, 'delete' ]);

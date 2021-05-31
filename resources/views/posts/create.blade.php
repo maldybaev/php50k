@@ -1,4 +1,7 @@
-@extends('layout')
+@extends('layouts.app')
+
+ @section('title', 'Создание нового поста')
+
  @section('content')
  <div><a href="/posts"><Назад</a></div>
       <h1>Создание нового поста</h1>

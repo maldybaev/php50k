@@ -1,5 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
+
+ @section('title', 'Редактирование товара')
+
  @section('content')
+
  <div><a href="/products"><Назад</a></div>
       <h1>Изменение товара</h1>
       <br>

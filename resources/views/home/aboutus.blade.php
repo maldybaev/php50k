@@ -1,4 +1,7 @@
-@extends('layout')
+@extends('layouts.app')
+
+ @section('title', 'О нас')
+
  @section('content')
  @foreach ($aboutus as $about)
     <div class="item">
@@ -7,5 +10,5 @@
       <div class="meta">Дата: {{ $about['date'] }}</div>
       <p>{{ $about['description'] }}</p>
     </div>
-    @endforeach
+  @endforeach
  @endsection
