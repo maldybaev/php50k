@@ -9,7 +9,9 @@
     <div class="item">
         <div><h2>{{ $post['title']}}</h2></div>
         <div> Автор: {{ $post['author'] }}</div>
-        <div> Автор: {{ $post['description'] }}</div>
+        <div> Дата: {{ $post['date'] }}</div>
+        <br>
+        <div> {{ $post['description'] }}</div>
     </div>
 
 @endsection

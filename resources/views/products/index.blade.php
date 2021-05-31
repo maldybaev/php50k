@@ -18,8 +18,8 @@
       </div>
       <p>{{ $product['description'] }}</p>
       <div>
-        <form action="/products/edit" method="POST"><a href="/products/edit" class="button">Редактировать</a></form>
-        <form action="/products/delete" method="POST"><a href="/products/delete" class="button">Удалить</a></form>
+        <a href="/products/edit" class="button">Редактировать</a>
+        <a href="/products/delete" class="button">Удалить</a>
       </div>
     </div>
     <hr>

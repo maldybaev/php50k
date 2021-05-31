@@ -15,8 +15,8 @@
       <br>
       <p>{{ $post['description'] }}</p>
       <div>
-        <form action="/posts/edit" method="POST"><a href="/posts/edit">Редактировать</a></form>
-        <form action="/posts/delete" method="POST"><a href="/posts/delete">Удалить</a></form>
+        <a href="/posts/edit">Редактировать</a>
+        <a href="/posts/delete">Удалить</a>
       </div>
     </div>
     <hr>
